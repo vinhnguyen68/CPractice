@@ -1,0 +1,12 @@
+# Compiled binaries and debug symbols
+src/main
+src/main.dSYM/
+
+# CMake build output
+build/
+
+# Editor config (machine-specific paths, not portable across the team)
+.vscode/
+
+# macOS
+.DS_Store
