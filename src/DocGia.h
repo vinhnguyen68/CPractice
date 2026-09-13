@@ -7,7 +7,7 @@ class DocGia
 {
 protected:
 	string HoTen;
-	CNgay NgayLapThe;
+	Ngay NgayLapThe;
 	int SoThangHieuLuc;
 public:
 	friend istream& operator >>(istream &, DocGia &);
