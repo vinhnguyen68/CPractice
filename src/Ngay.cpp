@@ -19,7 +19,9 @@ ostream& operator << (ostream &os, Ngay &x){
 }
 
 Ngay::Ngay(void){
-
+    ngay = 0;
+    thang = 0;
+    nam = 0;
 }
 
 Ngay::~Ngay(void){

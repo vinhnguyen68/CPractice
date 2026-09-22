@@ -33,6 +33,8 @@ ostream& operator <<(ostream &os, DocGia x)
 
 DocGia::DocGia(void)
 {
+	HoTen = "";
+	SoThangHieuLuc = 0;
 }
 
 
