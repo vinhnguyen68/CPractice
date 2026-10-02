@@ -11,9 +11,14 @@ add_library(docgia_lib
     src/Ngay.cpp
 )
 
+# --- Your tests ---
 enable_testing()
 add_executable(run_tests src/tests/test_docgia.cpp)
 target_link_libraries(run_tests docgia_lib GTest::gtest GTest::gtest_main)
+
+# --- Your actual program ---
+add_executable(quanlydocgia src/main.cpp)
+target_link_libraries(quanlydocgia docgia_lib)
 
 include(GoogleTest)
 gtest_discover_tests(run_tests)
