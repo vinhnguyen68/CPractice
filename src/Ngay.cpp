@@ -27,3 +27,7 @@ Ngay::Ngay(void){
 Ngay::~Ngay(void){
 
 }
+
+int Ngay::getNgay() const { return ngay; }
+int Ngay::getThang() const { return thang; }
+int Ngay::getNam() const { return nam; }
