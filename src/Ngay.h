@@ -10,7 +10,11 @@ class Ngay{
     public:
         friend istream& operator >> (istream &, Ngay&);
         friend ostream& operator << (ostream &, Ngay&);
-        Ngay::Ngay(void);
-        Ngay::~Ngay(void);
+        Ngay(void);
+        ~Ngay(void);
+
+        int getNgay() const;
+        int getThang() const;
+        int getNam() const;
 };
 
