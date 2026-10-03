@@ -11,7 +11,5 @@ class DocGiaTreEm : public DocGia{
         friend istream & operator >> (istream& is, DocGiaTreEm& obj);
         DocGiaTreEm();
         ~DocGiaTreEm();
-        float TinhTienLamThe(void){
-            return 20000;
-        }
+        float TinhTienLamThe(void) override;
 };

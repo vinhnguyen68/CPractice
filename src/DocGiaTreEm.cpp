@@ -23,6 +23,8 @@ istream& operator >> (istream& is, DocGiaTreEm& obj){
     return is;
 }
 
-
+float DocGiaTreEm::TinhTienLamThe(void){
+    return 20000;
+}
 
 

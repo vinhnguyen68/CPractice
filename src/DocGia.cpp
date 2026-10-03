@@ -22,12 +22,11 @@ istream& operator >>(istream &is, DocGia &x)
 	return is;
 }
 
-ostream& operator <<(ostream &os, DocGia x)
+ostream& operator <<(ostream &os, DocGia& x)
 {
 	os << "\nHo ten: " << x.HoTen;
 	os << "\nNgay lap the: " << x.NgayLapThe;
 	os << "\nSo thang co hieu luc: " << x.SoThangHieuLuc;
-
 	return os;
 }
 

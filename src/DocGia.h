@@ -11,7 +11,8 @@ protected:
 	int SoThangHieuLuc;
 public:
 	friend istream& operator >>(istream &, DocGia &);
-	friend ostream& operator <<(ostream &, DocGia);
+	friend ostream& operator <<(ostream &, DocGia &);
 	DocGia(void);
 	~DocGia(void);
+	virtual float TinhTienLamThe() = 0;
 };

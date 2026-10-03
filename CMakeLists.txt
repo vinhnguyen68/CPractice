@@ -10,6 +10,8 @@ add_library(docgia_lib
     src/DocGia.cpp
     src/Ngay.cpp
     src/DocGiaNguoiLon.cpp
+    src/DocGiaTreEm.cpp
+    src/ThuVien.cpp
 )
 
 # --- Your tests ---

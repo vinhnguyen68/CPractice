@@ -23,3 +23,13 @@ istream& operator >> (istream& is, DocGiaNguoiLon& obj){
 }
 
 string DocGiaNguoiLon::getCMND() const { return CMND; }
+
+void DocGiaNguoiLon::setCMND(const string& newCMND){
+    CMND = newCMND;
+}
+
+float DocGiaNguoiLon::TinhTienLamThe(){
+    return SoThangHieuLuc * 10000;
+}
+
+

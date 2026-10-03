@@ -4,6 +4,16 @@ ThuVien::ThuVien(){}
 
 ThuVien::~ThuVien(){}
 
+bool ThuVien::KiemTraTrungCMND(const string& cmnd){
+    int sizeNguoiLon = ListDGNL.size();
+    for (int i = 0; i < sizeNguoiLon; i++){
+        if (cmnd == ListDGNL[i].getCMND()){
+            return true;
+        }
+    }
+    return false;
+}
+
 ostream& operator << (ostream& os, ThuVien& obj){
     os << "\n---------Danh Sach Doc Gia Tre Em---------------";
     int sizetreem = obj.ListDGTE.size();
@@ -48,6 +58,20 @@ istream& operator >> (istream& is, ThuVien& obj){
         else if (luachon == 2){
             DocGiaNguoiLon a;
             is >> a;
+            bool duplicateCMND = false;
+            do{
+                duplicateCMND = obj.KiemTraTrungCMND(a.getCMND());
+                if (duplicateCMND == false){
+                    break;
+                } 
+                else{
+                    cout << "CMND bi trung, nhap lai: ";
+                    string newCMND = "";
+                    fflush(stdin);
+                    getline(is, newCMND);
+                    a.setCMND(newCMND);
+                }
+            }while (duplicateCMND == true);
             obj.ListDGNL.push_back(a);
         }
 
@@ -57,6 +81,6 @@ istream& operator >> (istream& is, ThuVien& obj){
 
 
 
-float TinhTongTienLamThe(){
+float ThuVien::TinhTongTienLamThe(){
     return 100000;
 }

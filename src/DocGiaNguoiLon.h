@@ -12,4 +12,6 @@ class DocGiaNguoiLon : public DocGia{
         DocGiaNguoiLon();
         ~DocGiaNguoiLon();
         string getCMND() const;
+        void setCMND(const string& newCMND);
+        float TinhTienLamThe() override;
 };
