@@ -10,8 +10,9 @@ class ThuVien{
         vector<DocGiaNguoiLon> ListDGNL;
     public:
         friend ostream& operator << (ostream& os, ThuVien& obj);
-        friend istream& operator >> (ostream& is, ThuVien& obj);
+        friend istream& operator >> (istream& is, ThuVien& obj);
         ThuVien();
         ~ThuVien();
         float TinhTongTienLamThe();
+        bool KiemTraTrungCMND(const string& cmnd);
 };
