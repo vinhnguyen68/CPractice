@@ -9,6 +9,7 @@ find_package(GTest REQUIRED)
 add_library(docgia_lib
     src/DocGia.cpp
     src/Ngay.cpp
+    src/DocGiaNguoiLon.cpp
 )
 
 # --- Your tests ---
