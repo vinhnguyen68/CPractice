@@ -1,7 +1,9 @@
-#include <iostream>
-using namespace std;
+#include "ThuVien.h"
 
 int main() {
-    cout << "Hello world" << endl;
+    ThuVien x;
+    cin >> x;
+    cout << x;
+    system("pause");
     return 0;
 };
