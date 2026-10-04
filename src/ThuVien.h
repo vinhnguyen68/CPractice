@@ -15,4 +15,9 @@ class ThuVien{
         ~ThuVien();
         float TinhTongTienLamThe();
         bool KiemTraTrungCMND(const string& cmnd);
+
+        void ThemDocGiaNguoiLon(const DocGiaNguoiLon& dg);
+        vector<DocGiaNguoiLon> LayDanhSachNguoiLon() const;
+        DocGiaNguoiLon* TimTheoCMND(const string& cmnd);
+        bool XoaTheoCMND(const string& cmnd);
 };

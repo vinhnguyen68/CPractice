@@ -11,6 +11,7 @@ class Ngay{
         friend istream& operator >> (istream &, Ngay&);
         friend ostream& operator << (ostream &, Ngay&);
         Ngay(void);
+        Ngay(int ngay_, int thang_, int nam_);
         ~Ngay(void);
 
         int getNgay() const;

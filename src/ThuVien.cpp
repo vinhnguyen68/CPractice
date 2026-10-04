@@ -84,3 +84,31 @@ istream& operator >> (istream& is, ThuVien& obj){
 float ThuVien::TinhTongTienLamThe(){
     return 100000;
 }
+
+
+void ThuVien::ThemDocGiaNguoiLon(const DocGiaNguoiLon& dg){
+    ListDGNL.push_back(dg);
+}
+
+vector<DocGiaNguoiLon> ThuVien::LayDanhSachNguoiLon() const {
+    return ListDGNL;
+}
+
+DocGiaNguoiLon* ThuVien::TimTheoCMND(const string& cmnd){
+    for (size_t i = 0; i < ListDGNL.size(); i++){
+        if (ListDGNL[i].getCMND() == cmnd){
+            return &ListDGNL[i];
+        }
+    }
+    return nullptr;
+}
+
+bool ThuVien::XoaTheoCMND(const string& cmnd){
+    for (size_t i = 0; i < ListDGNL.size(); i++){
+        if (ListDGNL[i].getCMND() == cmnd){
+            ListDGNL.erase(ListDGNL.begin() + i);
+            return true;
+        }
+    }
+    return false;
+}

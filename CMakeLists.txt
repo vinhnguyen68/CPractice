@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(GTest REQUIRED)
+find_package(httplib REQUIRED)
 
 add_library(docgia_lib
     src/DocGia.cpp
@@ -13,6 +14,7 @@ add_library(docgia_lib
     src/DocGiaTreEm.cpp
     src/ThuVien.cpp
 )
+target_include_directories(docgia_lib PUBLIC src)
 
 # --- Your tests ---
 enable_testing()
@@ -22,6 +24,13 @@ target_link_libraries(run_tests docgia_lib GTest::gtest GTest::gtest_main)
 # --- Your actual program ---
 add_executable(quanlydocgia src/main.cpp)
 target_link_libraries(quanlydocgia docgia_lib)
+
+# --- API server ---
+add_executable(api_server 
+            api/main.cpp 
+            api/docgianguoilon_routes.cpp
+)
+target_link_libraries(api_server docgia_lib httplib::httplib)
 
 include(GoogleTest)
 gtest_discover_tests(run_tests)
