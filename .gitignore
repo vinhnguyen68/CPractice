@@ -4,6 +4,8 @@ src/main.dSYM/
 
 # CMake build output
 build/
+build-debug/
+build-release/
 
 # Editor config (machine-specific paths, not portable across the team)
 .vscode/
