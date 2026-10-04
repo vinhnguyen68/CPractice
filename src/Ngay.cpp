@@ -23,6 +23,11 @@ Ngay::Ngay(void){
     thang = 0;
     nam = 0;
 }
+Ngay::Ngay(int ngay_, int thang_, int nam_){
+    ngay = ngay_;
+    thang = thang_;
+    nam = nam_;
+}
 
 Ngay::~Ngay(void){
 

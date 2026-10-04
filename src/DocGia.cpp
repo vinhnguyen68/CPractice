@@ -40,3 +40,25 @@ DocGia::DocGia(void)
 DocGia::~DocGia(void)
 {
 }
+
+
+string DocGia::getHoTen() const {
+	return HoTen;
+}
+void DocGia::setHoTen(const string& newHoTen){
+	HoTen = newHoTen;
+}
+
+Ngay DocGia::getNgayLapThe() const{
+	return NgayLapThe;
+}
+void DocGia::setNgayLapThe(const Ngay& newNgay){
+	NgayLapThe = newNgay;
+}
+
+int DocGia::getSoThangHieuLuc() const{
+	return SoThangHieuLuc;
+}
+void DocGia::setSoThangHieuLuc(int newSoThang){
+	SoThangHieuLuc = newSoThang;
+}
