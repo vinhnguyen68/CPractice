@@ -1,5 +1,6 @@
 #include <httplib.h>
 #include <iostream>
+#include "docgianguoilon_routes.h"
 using namespace std;
 
 int main() {
@@ -8,6 +9,8 @@ int main() {
     svr.Get("/ping", [](const httplib::Request&, httplib::Response& res){
         res.set_content("pong", "text/plain");
     });
+
+    RegisterDocGiaNguoiLonRoutes(svr);
 
     cout << "Server listening on http://localhost:8080\n";
 

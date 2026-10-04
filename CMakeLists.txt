@@ -25,7 +25,10 @@ add_executable(quanlydocgia src/main.cpp)
 target_link_libraries(quanlydocgia docgia_lib)
 
 # --- API server ---
-add_executable(api_server api/main.cpp)
+add_executable(api_server 
+            api/main.cpp 
+            api/docgianguoilon_routes.cpp
+)
 target_link_libraries(api_server httplib::httplib)
 
 include(GoogleTest)
