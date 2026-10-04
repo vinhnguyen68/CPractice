@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//helper
 namespace {
     string DocGiaNguoiLonToJson(DocGiaNguoiLon& dg) {
         Ngay ngay = dg.getNgayLapThe();
@@ -19,6 +20,9 @@ namespace {
         "}";
     }
 }
+
+// helper will return json
+//{"hoten":"Vinh Nguyen","cmnd":"123456789","sothanghieuluc":12,"ngaylapthe":{"ngay":11,"thang":12,"nam":1996},"tienlamthe":120000.000000}
 
 void RegisterDocGiaNguoiLonRoutes(httplib::Server& svr, ThuVien& thuVien) {
 
