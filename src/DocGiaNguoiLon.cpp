@@ -9,7 +9,7 @@ DocGiaNguoiLon::DocGiaNguoiLon(void){
 ostream& operator << (ostream& os, DocGiaNguoiLon& obj){
     DocGia& cha = static_cast<DocGia&>(obj);  
     os << cha;
-    os << endl << "Nguoi dai dien: " << obj.CMND;
+    os << endl << "So cmnd: " << obj.CMND << "\n";
     return os;
 }
 
