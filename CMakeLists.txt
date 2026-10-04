@@ -14,6 +14,7 @@ add_library(docgia_lib
     src/DocGiaTreEm.cpp
     src/ThuVien.cpp
 )
+target_include_directories(docgia_lib PUBLIC src)
 
 # --- Your tests ---
 enable_testing()
@@ -29,7 +30,7 @@ add_executable(api_server
             api/main.cpp 
             api/docgianguoilon_routes.cpp
 )
-target_link_libraries(api_server httplib::httplib)
+target_link_libraries(api_server docgia_lib httplib::httplib)
 
 include(GoogleTest)
 gtest_discover_tests(run_tests)
