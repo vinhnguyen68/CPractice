@@ -1,5 +1,0 @@
-if(EXISTS "/Users/vinh/Desktop/gitpractice/CPractice/build-release/run_tests_e3b0c442_tests.cmake")
-  include("/Users/vinh/Desktop/gitpractice/CPractice/build-release/run_tests_e3b0c442_tests.cmake")
-else()
-  add_test(run_tests_NOT_BUILT run_tests_NOT_BUILT)
-endif()

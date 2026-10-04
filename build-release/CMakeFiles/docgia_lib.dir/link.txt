@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdocgia_lib.a CMakeFiles/docgia_lib.dir/src/DocGia.cpp.o CMakeFiles/docgia_lib.dir/src/Ngay.cpp.o CMakeFiles/docgia_lib.dir/src/DocGiaNguoiLon.cpp.o CMakeFiles/docgia_lib.dir/src/DocGiaTreEm.cpp.o CMakeFiles/docgia_lib.dir/src/ThuVien.cpp.o
-/usr/bin/ranlib libdocgia_lib.a

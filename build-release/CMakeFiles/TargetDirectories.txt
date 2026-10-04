@@ -1,6 +1,0 @@
-/Users/vinh/Desktop/gitpractice/CPractice/build-release/CMakeFiles/docgia_lib.dir
-/Users/vinh/Desktop/gitpractice/CPractice/build-release/CMakeFiles/run_tests.dir
-/Users/vinh/Desktop/gitpractice/CPractice/build-release/CMakeFiles/quanlydocgia.dir
-/Users/vinh/Desktop/gitpractice/CPractice/build-release/CMakeFiles/test.dir
-/Users/vinh/Desktop/gitpractice/CPractice/build-release/CMakeFiles/edit_cache.dir
-/Users/vinh/Desktop/gitpractice/CPractice/build-release/CMakeFiles/rebuild_cache.dir
